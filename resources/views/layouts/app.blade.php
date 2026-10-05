@@ -7,6 +7,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Dentalux') — Odontología Familiar</title>
 
+    {{-- Favicon --}}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
@@ -1104,8 +1110,8 @@
 
     <script>
         /* ══════════════════════════════════════════════
-       SIDEBAR — Colapsar (desktop) y abrir (mobile)
-    ══════════════════════════════════════════════ */
+           SIDEBAR — Colapsar (desktop) y abrir (mobile)
+        ══════════════════════════════════════════════ */
         const sidebar = document.getElementById('sidebar');
         const main = document.getElementById('main');
         const colBtn = document.getElementById('collapse-btn');
