@@ -76,16 +76,16 @@
         .login-brand {
             display: flex;
             align-items: center;
-            gap: 12px;
             position: relative;
             z-index: 1;
+            margin-bottom: 4px;
         }
 
         .brand-logo {
-            width: 46px;
-            height: 46px;
-            background: #C8395A;
-            border-radius: 14px;
+            width: 64px;
+            height: 64px;
+            background: transparent;
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -360,20 +360,9 @@
         {{-- Panel izquierdo --}}
         <div class="login-left">
             <div class="login-brand">
-                <div class="brand-logo">
-                    <svg viewBox="0 0 38 38" fill="none" width="46" height="46">
-                        <path
-                            d="M19 6C13.5 6 9 10.5 9 16C9 18.5 9.9 20.8 11 23L13 30C13.5 31.8 15.2 33 17 33H21C22.8 33 24.5 31.8 25 30L27 23C28.1 20.8 29 18.5 29 16C29 10.5 24.5 6 19 6Z"
-                            fill="white" opacity="0.9" />
-                        <path
-                            d="M19 6C16 6 13.3 7.5 11.8 9.8C13.2 9.1 14.8 8.7 16.5 8.7C21.2 8.7 25 12.3 25.5 17C27.2 16.1 28.2 14.5 28.2 12.8C28.2 9 23.5 6 19 6Z"
-                            fill="white" opacity="0.35" />
-                    </svg>
-                </div>
-                <div>
-                    <div class="brand-name">dentalux</div>
-                    <div class="brand-sub">Odontología Familiar</div>
-                </div>
+                <img src="{{ asset('images/logo-login.png') }}" alt="Dentalux Odontología Familiar"
+                    style="height:70px;width:auto;object-fit:contain;
+                            filter:drop-shadow(0 2px 12px rgba(0,0,0,0.25));">
             </div>
 
             <div class="login-hero">
